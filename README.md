@@ -8,8 +8,8 @@ Structure du projet:
 
 ## Lancer le projet
 
-1. Ouvrir `index.html` dans un navigateur.
-2. Modifier les fichiers selon vos besoins.
+Ouvrir `index.html` dans un navigateur.
+
 
 ## Description
 
