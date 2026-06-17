@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect - Plateforme d'apprentissage</title>
+    <meta name="description" content="EduConnect propose des parcours pratiques pour apprendre le développement web, valider ses compétences avec un quiz et échanger avec des formateurs.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>EduConnect</span>
+            </div>
+            <ul class="nav-links" role="tablist" aria-label="Sections EduConnect">
+                <li><button type="button" id="tab-home" class="nav-item active" data-tab="home" role="tab" aria-controls="home" aria-selected="true">Accueil</button></li>
+                <li><button type="button" id="tab-courses" class="nav-item" data-tab="courses" role="tab" aria-controls="courses" aria-selected="false">Cours</button></li>
+                <li><button type="button" id="tab-teachers" class="nav-item" data-tab="teachers" role="tab" aria-controls="teachers" aria-selected="false">Enseignants</button></li>
+                <li><button type="button" id="tab-quiz" class="nav-item" data-tab="quiz" role="tab" aria-controls="quiz" aria-selected="false">Quiz</button></li>
+                <li><button type="button" id="tab-pricing" class="nav-item" data-tab="pricing" role="tab" aria-controls="pricing" aria-selected="false">Tarifs</button></li>
+                <li><button type="button" id="tab-contact" class="nav-item" data-tab="contact" role="tab" aria-controls="contact" aria-selected="false">Contact</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteneur Principal (Contenu dynamique) -->
+    <main class="main-content">
+        
+        <!-- SECTION : ACCUEIL -->
+        <section id="home" class="tab-content active" role="tabpanel" aria-labelledby="tab-home">
+            <div class="hero">
+                <div class="hero-content">
+                    <span class="hero-kicker">Formation web pratique et accompagnee</span>
+                    <h1>Apprenez le développement web avec une méthode claire, progressive et orientée projet</h1>
+                    <p>EduConnect aide les débutants et étudiants à construire des bases solides en HTML, CSS, JavaScript et React grâce à des parcours guidés, des exercices concrets et un suivi pédagogique.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" type="button" data-tab-trigger="courses">Découvrir nos cours</button>
+                        <button class="btn btn-secondary" type="button" data-tab-trigger="quiz">Tester mon niveau</button>
+                    </div>
+                </div>
+                <div class="hero-panel" aria-label="Aperçu du parcours EduConnect">
+                    <div class="hero-panel-header">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <span>Parcours recommandé</span>
+                    </div>
+                    <ol class="learning-steps">
+                        <li><strong>Comprendre</strong><span>Notions essentielles expliquées simplement.</span></li>
+                        <li><strong>Pratiquer</strong><span>Mini-projets pour appliquer chaque compétence.</span></li>
+                        <li><strong>Valider</strong><span>Quiz, corrections et progression mesurable.</span></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="home-stats" aria-label="Indicateurs EduConnect">
+                <div>
+                    <strong>4</strong>
+                    <span>parcours progressifs</span>
+                </div>
+                <div>
+                    <strong>100h+</strong>
+                    <span>de pratique guidée</span>
+                </div>
+                <div>
+                    <strong>3</strong>
+                    <span>formateurs spécialisés</span>
+                </div>
+            </div>
+
+            <div class="home-section">
+                <div class="section-intro">
+                    <span class="section-kicker">Pourquoi EduConnect ?</span>
+                    <h2>Une plateforme pensée pour apprendre sans se perdre</h2>
+                    <p>Chaque parcours va droit à l’essentiel : vous avancez étape par étape, vous construisez des projets visibles et vous savez quoi travailler ensuite.</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-item">
+                        <i class="fa-solid fa-route" aria-hidden="true"></i>
+                        <h3>Progression structurée</h3>
+                        <p>Les modules sont organisés du plus simple au plus avancé pour éviter les lacunes et garder une progression régulière.</p>
+                    </article>
+                    <article class="feature-item">
+                        <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                        <h3>Projets concrets</h3>
+                        <p>Chaque compétence est reliée à une réalisation pratique : page responsive, tableau de tâches, dashboard ou portfolio.</p>
+                    </article>
+                    <article class="feature-item">
+                        <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+                        <h3>Accompagnement humain</h3>
+                        <p>Les formateurs vous aident à comprendre vos erreurs, améliorer votre méthode et préparer vos livrables.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="home-section home-split">
+                <div>
+                    <span class="section-kicker">Méthode</span>
+                    <h2>Un apprentissage centré sur la pratique</h2>
+                    <p>EduConnect ne se limite pas à présenter des notions. La plateforme vous pousse à manipuler le code, tester vos choix, corriger vos erreurs et documenter vos projets.</p>
+                    <p>Le quiz intégré permet aussi d’identifier rapidement les points à revoir avant de passer au module suivant.</p>
+                </div>
+                <div class="method-list">
+                    <div><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Leçon courte et ciblée</span></div>
+                    <div><i class="fa-solid fa-keyboard" aria-hidden="true"></i><span>Exercice guidé</span></div>
+                    <div><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Mini-projet appliqué</span></div>
+                    <div><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Validation des acquis</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION : COURS -->
+        <section id="courses" class="tab-content" role="tabpanel" aria-labelledby="tab-courses" hidden>
+            <h2>Parcours de formation</h2>
+            <div class="grid-container" id="courses-grid">
+                <!-- Injecté par JavaScript -->
+            </div>
+        </section>
+
+        <!-- SECTION : ENSEIGNANTS -->
+        <section id="teachers" class="tab-content" role="tabpanel" aria-labelledby="tab-teachers" hidden>
+            <h2>Vos Formateurs</h2>
+            <div class="grid-container" id="teachers-grid">
+                <!-- Injecté par JavaScript -->
+            </div>
+        </section>
+
+        <!-- SECTION : QUIZ -->
+        <section id="quiz" class="tab-content" role="tabpanel" aria-labelledby="tab-quiz" hidden>
+            <h2>Quiz de validation</h2>
+            <p class="tab-intro">Choisissez une matière, répondez aux questions et obtenez un récapitulatif pour savoir quoi réviser.</p>
+            <div class="quiz-card" id="quiz-container">
+                <!-- Injecté par JavaScript -->
+            </div>
+        </section>
+
+        <!-- SECTION : TARIFS -->
+        <section id="pricing" class="tab-content" role="tabpanel" aria-labelledby="tab-pricing" hidden>
+            <h2>Des tarifs adaptés à vos besoins</h2>
+            <p class="tab-intro">Commencez gratuitement, progressez avec un parcours étudiant ou choisissez le mentorat pour être accompagné sur vos projets.</p>
+            <div class="grid-container" id="pricing-grid">
+                <!-- Injecté par JavaScript -->
+            </div>
+            <div class="pricing-note">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                <p>Chaque offre inclut l’accès aux quiz, aux supports de cours et aux mises à jour pédagogiques. Vous pouvez changer de formule à tout moment.</p>
+            </div>
+        </section>
+
+        <!-- SECTION : CONTACT -->
+        <section id="contact" class="tab-content" role="tabpanel" aria-labelledby="tab-contact" hidden>
+            <h2>Contactez-nous</h2>
+            <div class="contact-container">
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" required minlength="2" autocomplete="name" placeholder="Awa Diop" aria-describedby="name-error">
+                        <p class="form-error" id="name-error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" required autocomplete="email" placeholder="awa@example.com" aria-describedby="email-error">
+                        <p class="form-error" id="email-error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre Message</label>
+                        <textarea id="message" rows="5" required minlength="10" placeholder="Bonjour, je souhaite..." aria-describedby="message-error"></textarea>
+                        <p class="form-error" id="message-error"></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 EduConnect. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
